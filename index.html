@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title> P.R. Black Jack </title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold"> Black Jack </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-5">
+                        <a href="#home" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a href="#about" class="nav-link">
+                            O nama
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Usluge
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#usluge"> Servis alternatora i anlasera</a></li>
+                            <li><a class="dropdown-item" href="#usluge"> Zamena svetlosne signalizacije </a></li>
+                            <li><a class="dropdown-item" href="#usluge"> Ugradnja dodatne opreme </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link">
+                            Info
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Naslovna slika -->
+
+    <section class="bg-cleardark">
+        <div class="container">
+            <div class="row pt-5 pb-2" style="background-image: url('/img/auto.jpg'); background-position: center;">
+                <div class="col pt-5">
+                    <h1 class="fw-bold"> Posetite naš servis </h1>
+                    <p class="text-secondary"> Tradicija uspešnog poslovanja duga 20 godina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Registracija -->
+
+
+    <section class="bg-warning text-dark p-3 p-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 py-1">
+                    <h3 class="mb-3 mb-md-0">
+                        Budite u toku sa novostima
+                    </h3>
+                </div>
+                <div class="col-12 col-lg-6 mt-lg-0 mt-md-3 mt-sm-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Unesite e-mail" />
+                        <button class="btn btn-danger btn-lg text-white" type="button">
+                            Registruj se
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O firmi -->
+
+
+    <section class="bg-white text-dark py-5" id="about">
+        <div class="container">
+            <div class="d-md-flex align-items-center
+                        justify-content-between">
+                <div>
+                    <h1 class="text-warning"> O nama </h1>
+                    <p class="lead">
+                        Autoelektričarska zanatska radnja "Black Jack" je osnovana 2001. godine
+                        sa ciljem pružanja najkvalitetnijih usluga u oblasti autoelektrike.
+                        Naša primarna delatnost je servisiranje alternatora i anlasera svih motornih vozila.
+                        Posedujemo najsavremeniju opremu koja garantuje sigurnost i pouzdanost
+                        pri dijagnostikovanju kvarova i popravci vozila.
+                        Pored četvrt veka uspešnog poslovanja, pohvala i potvrda našem načinu poslovanju
+                        su naravno i zadovoljne mušerije!
+                    </p>
+                    <button class="col-12 py-3 col-md-6 fw-bold btn btn-dark btn-lg"> 
+                        <a class="link-warning text-decoration-none" href="https://www.google.com/search?q=black+jack+sombor&oq=black&aqs=chrome.0.69i59j69i57j69i59j46i512j0i512j46i512j69i61j69i60.1991j0j7&sourceid=chrome&ie=UTF-8#lrd=0x475cb597da4655bd:0xce077ce6b0581222,1,,,">
+                            Recenzije
+                        </a> 
+                    </button>
+                </div>
+                <img class="img-fluid w-50 d-none d-lg-block" src="/img/auto.png" alt="service">
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+
+    <!-- Usluge  -->
+
+    <section class="my-5" id="usluge">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-12 text-start"> 
+                   <h1> Usluge </h1>
+                </div>
+                <div class="col-lg">
+                    <div class="card bg-custom">
+                        <img src="/img/alternatorslika.jpg" class="card-img-top" alt="alternator">
+                        <div class="card-body text-start">
+                            <h5 class="card-title"> Servis alternatora i anlasera </h5>
+                            <p class="card-text"> Vršimo popravku alternatora i anlasera putničkog i teretnog programa, kao i njihovo testiranje.</p>
+                            <a href="#" class="btn btn-secondary">Opširnije ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg mx-0 mx-lg-5">
+                    <div class="card bg-custom">
+                        <img src="/img/svetla.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title"> Zamana svetlosne signalizacije </h5>
+                            <p class="card-text"> Vršimo zamenu svih tipova sijalica na putničkom i teretnom programu.</p>
+                            <a href="#" class="btn btn-secondary">Opširnije ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card bg-custom">
+                        <img src="/img/zamena.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title"> Ugradnja dodatne opreme </h5>
+                            <p class="card-text">Ukoliko želite da tune-ujete vaš auto sa nekim od elektronskih gadget-a tu smo.</p>
+                            <a href="#" class="btn btn-secondary">Pročitaj više ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pb-5">
+        <div 
+            class="container-fluid px-5" 
+            style="height: 300px; background-image: url('/img/bg.png'); background-size: cover; background-position: bottom;"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col pt-5 mt-5">
+                        <h2 class="mt-5 pt-2"> Ne dozvolite kvarovima da vam stanu na put! </h2>
+                        <p> Budite sigurni na putu. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+    <!-- Infoormacije -->
+
+    <section class="bg-white text-dark pt-5" id="info">
+        <div class="container">
+            <div class="row">
+              <div class="col-12 mb-3">
+                  <h2> Informacije </h2>
+              </div>
+
+                
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center visina">
+                            <div class="h1 mb-3">
+                                <i class="bi-info-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-warning"> Podaci o firmi </h3>
+                            <p class="card-text pt-3">
+                                PIB: 101844484 <br> 
+                                Šifra delatnosti: 4520   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center visina">
+                            <div class="h1 mb-3">
+                                <i class="bi-alarm"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-warning"> Radno vreme </h3>
+                            <p class="card-text pt-3">
+                                Ponedeljak - Petak :    09h - 17h <br>
+                                Subota - Nedelja :  Zatvoreno
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center visina">
+                            <div class="h1 mb-3">
+                                <i class="bi-telephone"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-warning"> Kontakt </h3>
+                            <p class="card-text pt-3">
+                                Mobilni : 063 580 916 <br>
+                                Fiksni : 025 05650 0650
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center visina">
+                            <div class="h1 mb-3">
+                                <i class="bi-mailbox"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-warning"> Mail </h3>
+                            <p class="card-text pt-3">
+                                E-mail: kanjo@sbb.rs <br> 
+                                E-mail: dejankanjo@blackjack.com 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="card bg-warning text-dark">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi-geo-alt"></i>
+                            </div>
+                            <h3 class="card-title"> Lokacija </h3>
+                            <p class="card-text pt-3">
+                                Adrersa: Sremska 1
+                            </p>
+                            <p class="text-danger fw-bold"> Lokacija servisa: Beogradska </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-9 mb-3">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe class="gmap_iframe" 
+                                frameborder="0" 
+                                scrolling="no"
+                                marginheight="0" 
+                                marginwidth="0" 
+                                src="https://maps.google.com/maps?width=100%&amp;
+                                height=100%&amp;hl=en&amp;q=black jack&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            </iframe>
+                        </div>
+                        <style>.mapouter{position:relative;text-align:right;width:100%;height:100%;}
+                               .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}
+                               .gmap_iframe {width:100%!important;height:100%!important;}
+                        </style>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+    </section>
+
+
+    <footer class="bg-white text-dark border-top border-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pt-3">
+                    <img src="/img/logo.svg" style="height: 100px;" alt="logo">
+                    <p>
+                        Established Nov 2001.
+                    </p>
+                    <p>
+                        Pronadjite nas na društvenim mrežama
+                    </p>
+                </div>
+                <div class="col-4 col-sm-1">
+                    <div class="h1 mb-3 text-end">
+                        <i class="bi-linkedin"></i>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-1">
+                    <div class="h1 mb-3 text-center">
+                        <i class="bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-1">
+                    <div class="h1 mb-3 text-start">
+                        <i class="bi-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <section>
+        <div class="container text-center">
+            <p class="my-0"> All copy rights reserved. Black Jack </p>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

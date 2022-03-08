@@ -1,0 +1,12 @@
+.bg-cleardark {
+    background-color: black;
+}
+
+.bg-custom {
+    background-color: #2e2e2e;
+    box-shadow: 5px white;
+}
+
+.visina {
+    height: 250px;
+}
