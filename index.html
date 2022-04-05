@@ -178,7 +178,7 @@
         </div>
 
         <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-            <div class="container">
+            <div class="container ps-sm-1 pe-sm-4 ps-3 pe-4">
                 <div class="offcanvas-header px-0">
                     <h5 id="offcanvasTopLabel"> Servis alternatora i anlasera </h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -304,9 +304,9 @@
     
 
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="container">
-                    <div class="offcanvas-header">
+        <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="container px-sm-1 px-3">
+                    <div class="offcanvas-header  px-0">
                         <h5 id="offcanvasRightLabel"> Svetlosna signalizacija </h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -314,32 +314,87 @@
 
 
             
-            <div class="offcanvas-body small">
-                <div class="container">
-                    <p> U ponudi imamo sve standardne modele sijalica koje se koriste u autoindustriji. Kod nas možete zameniti sijalice spoljnjeg signalizacionog osvetljenja, kao i svetla kabine. 
-                        Zamenu signalizacionog osvetljenja radimo bez potrebe za prethodnim zakazivanjem termina isključivo za kratko, dugačko, poziciono svetlo! Vršimo zamene dotrjalih utičnica i grla sijalica. 
-                        Takođe nudimo uslugu zamene zadnjih lampi na automobilu. Ukoliko niste pronašli model sijalice na listi ispod koji vam je potreban, kontaktirajte nas ili posetite na našoj adresi za više informacija. 
-                    </p>
-                    <div class="row">
-                        <div class="col-3">
-                            <div id="list-example" class="list-group">
-                                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            <div class="offcanvas-body">
+            
+                    <div class="container px-1">
+                        <div class="col-12">
+                            <p> U ponudi imamo sve standardne modele sijalica koje se koriste u autoindustriji. Kod nas možete zameniti sijalice spoljnjeg signalizacionog osvetljenja, kao i svetla kabine. 
+                                Zamenu signalizacionog osvetljenja radimo bez potrebe za prethodnim zakazivanjem termina isključivo za kratko, dugačko, poziciono svetlo! Vršimo zamene dotrjalih utičnica i grla sijalica. 
+                                Takođe nudimo uslugu zamene zadnjih lampi na automobilu. Ukoliko niste pronašli model sijalice na listi ispod koji vam je potreban, kontaktirajte nas ili posetite na našoj adresi za više informacija. 
+                            </p>
+                        </div>
+                        
+
+
+                        <div class="row align-items-start">
+
+    
+                            <div class="col-12 col-lg-8 align-top">
+                                <div class="btn-group" style="width: 33.3%;">
+                                    <div class="dropdown" style="width: 100%;">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                                        Sijalice farova
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 100%;">
+                                        <li><button onmouseover="bigImg(0)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H1 </button></li>
+                                        <li><button onmouseover="bigImg(1)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H4 </button></li>
+                                        <li><button onmouseover="bigImg(2)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H7 </button></li>
+                                        <li><button onmouseover="bigImg(3)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H11 </button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="btn-group" style="width: 33.3;">
+                                    <div class="dropdown" style="width: 100%;">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                                        Sijalice stop lampi
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 100%;">
+                                        <li><button onmouseover="bigImg(4)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 21W </button></li>
+                                        <li><button onmouseover="bigImg(5)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 21/5W </button></li>
+                                        <li><button onmouseover="bigImg(6)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 21/4W </button></li>
+                                        <li><button onmouseover="bigImg(7)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> R5W </button></li>
+                                        <li><button onmouseover="bigImg(8)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> R10W </button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                                <div class="btn-group" style="width: 33.3%;">
+                                    <div class="dropdown" style="width: 100%;">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                                        Sijalice kabinskog osvetljenja
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 100%;">
+                                        <li><button onmouseover="bigImg(9)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 5W ubodna </button></li>
+                                        <li><button onmouseover="bigImg(10)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> C5W suflitna </button></li>
+                                        <li><button onmouseover="bigImg(11)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> C10W sulfitna </button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="okvirSlike col-12 col-lg-4" style="height:400px; background-color: aquamarine;">
+                                
                             </div>
                         </div>
-                        <div class="col-9">
-                            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                                <h4 id="list-item-1">Item 1</h4>
-                                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-                                <h4 id="list-item-2">Item 2</h4>
-                                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-                                <h4 id="list-item-3">Item 3</h4>
-                                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-                                <h4 id="list-item-4">Item 4</h4>
-                                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-                            </div>
+                    </div>
+
+
+                    
+            </div>
+
+            <div class="container-fluid bg-white text-dark">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <img src="img/logo.svg" style="height: 50px;" alt="logo">
+                        </div>
+                        <div class="col-12 text-center">
+                            <p> Black Jack - autoelektricarska zanatska radnja </p>
                         </div>
                     </div>
                 </div>
@@ -349,7 +404,7 @@
 
 
         <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
-            <div class="container px-1">
+            <div class="container ps-1 pe-4">
                 <div class="offcanvas-header text-dark px-0">
                         <h5 id="offcanvasRightLabel">Ugradnja dodatne opreme / Elektronika </h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -387,7 +442,7 @@
                       </div>
                       <div class="col-12 text-dark pt-3">
                         <p>Ukoliko se odlučite za neku od adaptacija na vašem automobilu potrebno je prethodno zakazati termin ugradnje kada ćete doterati
-                            vaše vozilo u servis, a mi ćemo vam obavestiti po završetku posla. 
+                            vaše vozilo u servis, a mi ćemo vas obavestiti po završetku posla. 
                         </p>
                      </div>
                         <div class="col-12 text-dark pt-3">
@@ -421,6 +476,12 @@
                         <p> Svi poslovi popravke elektronskih segmenata zahtevaju izvesno vreme u kojem će tehničar dijagnostikovati i otkloniti kvar, shodno tome ukoliko na autu postoje kvarovi na nekoj od
                             elektronskih komponenti potrebno je da se dogovori termin kada ćete ostaviti vaše vozilo u servisu. 
                         </p>
+                      </div>
+                      <div class="col-12 text-dark pt-3">
+                        <p> Poslovi ugradnje i popravke elektronskih komponenti se uobičajeno rešavaju unutar jednog radnog dana kada imate zakazan termin, osim ukoliko nije potrebno čekati neki od delova. Što se tiče opreme i 
+                            zamenskih delova možete ih vi lično kupiti negde ili kod nas ukoliko ima na stanju. Ukoliko se odlučite na polovne zamenske delove nabavljate ih vi na sopstvenu odgovornost.
+                        </p>
+                      </div>
                      </div>
                     </div>
 
@@ -454,10 +515,10 @@
         <div class="container-fluid"
             style="height: 300px; background-image: url('img/bg.png'); background-size: cover; background-position: bottom;">
             <div class="container reveal">
-                <div class="row">
+                <div class="row px-sm-3 px-0">
                     <div class="col pt-5 mt-5 px-0">
                         <h2 class="mt-5 pt-2"> Ne dozvolite kvarovima da vam stanu na put! </h2>
-                        <p> Budite sigurni na putu. </p>
+                        <p> Budite sigurni pri vožnji. </p>
                     </div>
                 </div>
             </div>
@@ -691,6 +752,55 @@
                     reveals[i].classList.add('active');
                 }
             }
+        }
+    </script>
+
+
+    <script>
+        var image = document.querySelectorAll(".slika");
+
+        var okvir = document.querySelector(".okvirSlike");
+
+        function bigImg(a) {
+            switch (a) {
+                case 0:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+                case 1:
+                    okvir.style.backgroundImage = "url('img/h4.jpg')";
+                break;
+                case 2:
+                    okvir.style.backgroundImage = "url('img/h7.jpg')";
+                break;
+                case 3:
+                    okvir.style.backgroundImage = "url('img/h11.jpg')";
+                break;
+                case 4:
+                    okvir.style.backgroundImage = "url('img/5w.jpg')";
+                break;
+                case 5:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+                case 6:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+                case 7:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+                case 8:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+                case 9:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+                case 10:
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                break;
+            }
+        }
+
+        function normalImg(x) {
+            okvir.style.backgroundImage = 'none';
         }
     </script>
 
