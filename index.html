@@ -43,7 +43,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Usluge
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="#uslugeServis"> Servis alternatora i anlasera</a></li>
                             <li><a class="dropdown-item" href="#uslugeSignalizacija"> Zamena svetlosne signalizacije
                                 </a></li>
@@ -87,16 +87,37 @@
                     </h3>
                 </div>
                 <div class="col-12 col-lg-6 mt-lg-0 mt-md-3 mt-sm-0">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Unesite e-mail" />
-                        <button class="btn btn-danger btn-lg text-white" type="button">
-                            Registruj se
-                        </button>
-                    </div>
+                        <form class="input-group" name="form1">
+                            <input type="text" class="form-control"  name='text1' placeholder="Unesite e-mail"/>
+                            <button class="btn btn-danger btn-lg text-white" type="button" 
+                                    onclick="ValidateEmail(document.form1.text1)">
+                                Registruj se
+                            </button>
+                        </form>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <script>
+        function ValidateEmail(inputText)
+        {
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)*$/;
+            if(inputText.value.match(mailformat))
+            {
+                alert("You have entered a valid email address!");
+            }
+            else if(inputText.value == '')
+            {
+                alert("Enter your e-mail and try again!");
+            }
+            else {
+                alert("You have entered an invalid email address!");
+            }
+        }
+    </script>
+
 
     <!-- O firmi -->
 
@@ -155,7 +176,7 @@
                 </div>
                 <div class="col-lg pt-5 pt-lg-0 my-0 my-lg-4" id="uslugeSignalizacija">
                     <div class="card bg-custom reveal">
-                        <img src="img/svetla.jpg" class="card-img-top" alt="...">
+                        <img src="img/svetla.jpg" class="card-img-top" alt="Svetlosna signalizacija">
                         <div class="card-body text-start">
                             <h5 class="card-title"> Zamana svetlosne signalizacije </h5>
                             <p class="card-text"> Vršimo zamenu svih tipova sijalica na putničkom i teretnom programu.
@@ -166,7 +187,7 @@
                 </div>
                 <div class="col-lg pt-5 pt-lg-0 my-0 my-lg-4" id="uslugeOprema">
                     <div class="card bg-custom reveal">
-                        <img src="img/zamena.jpg" class="card-img-top" alt="...">
+                        <img src="img/zamena.jpg" class="card-img-top" alt="dodatna oprema">
                         <div class="card-body text-start">
                             <h5 class="card-title"> Ugradnja dodatne opreme / Elektronika </h5>
                             <p class="card-text"> Ugradnja dodatne elektronske opreme i popravka već postojeće. </p>
@@ -320,7 +341,7 @@
                         <div class="col-12">
                             <p> U ponudi imamo sve standardne modele sijalica koje se koriste u autoindustriji. Kod nas možete zameniti sijalice spoljnjeg signalizacionog osvetljenja, kao i svetla kabine. 
                                 Zamenu signalizacionog osvetljenja radimo bez potrebe za prethodnim zakazivanjem termina isključivo za kratko, dugačko, poziciono svetlo! Vršimo zamene dotrjalih utičnica i grla sijalica. 
-                                Takođe nudimo uslugu zamene zadnjih lampi na automobilu. Ukoliko niste pronašli model sijalice na listi ispod koji vam je potreban, kontaktirajte nas ili posetite na našoj adresi za više informacija. 
+                                Takođe nudimo uslugu zamene zadnjih lampi na automobilu.
                             </p>
                         </div>
                         
@@ -329,56 +350,112 @@
                         <div class="row align-items-start">
 
     
-                            <div class="col-12 col-lg-8 align-top">
-                                <div class="btn-group" style="width: 33.3%;">
-                                    <div class="dropdown" style="width: 100%;">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
-                                        Sijalice farova
+                            <div class="col-12 col-lg-8 align-top pb-3">
+
+
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Sijalice farova
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 100%;">
-                                        <li><button onmouseover="bigImg(0)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H1 </button></li>
-                                        <li><button onmouseover="bigImg(1)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H4 </button></li>
-                                        <li><button onmouseover="bigImg(2)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H7 </button></li>
-                                        <li><button onmouseover="bigImg(3)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> H11 </button></li>
-                                        </ul>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><button onmouseover="prikazi(0)" class="dropdown-item" type="button"> H1 </button></li>
+                                                <li><button onmouseover="prikazi(1)" class="dropdown-item" type="button"> H4 </button></li>
+                                                <li><button onmouseover="prikazi(2)" class="dropdown-item" type="button"> H7 </button></li>
+                                                <li><button onmouseover="prikazi(3)" class="dropdown-item" type="button"> H11 </button></li>
+                                            </ul>
+                                        </div>
+                                      </div>
                                     </div>
-                                </div>
-
-
-                                <div class="btn-group" style="width: 33.3;">
-                                    <div class="dropdown" style="width: 100%;">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
-                                        Sijalice stop lampi
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 100%;">
-                                        <li><button onmouseover="bigImg(4)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 21W </button></li>
-                                        <li><button onmouseover="bigImg(5)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 21/5W </button></li>
-                                        <li><button onmouseover="bigImg(6)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 21/4W </button></li>
-                                        <li><button onmouseover="bigImg(7)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> R5W </button></li>
-                                        <li><button onmouseover="bigImg(8)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> R10W </button></li>
-                                        </ul>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne1">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                                              Sijalice prednjih maglenki
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                              <ul>
+                                                  <li><button onmouseover="prikazi(4)" class="dropdown-item" type="button"> H1 </button></li>
+                                                  <li><button onmouseover="prikazi(5)" class="dropdown-item" type="button"> H3 </button></li>
+                                                  <li><button onmouseover="prikazi(6)" class="dropdown-item" type="button"> HB3 </button></li>
+                                                  <li><button onmouseover="prikazi(7)" class="dropdown-item" type="button"> HB4 </button></li>
+                                                  <li><button onmouseover="prikazi(8)" class="dropdown-item" type="button"> H11 </button></li>
+                                              </ul>
+                                          </div>
+                                        </div>
                                     </div>
-                                </div>
-
-
-                                <div class="btn-group" style="width: 33.3%;">
-                                    <div class="dropdown" style="width: 100%;">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
-                                        Sijalice kabinskog osvetljenja
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Sijalice zadnjih lampi
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 100%;">
-                                        <li><button onmouseover="bigImg(9)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> 5W ubodna </button></li>
-                                        <li><button onmouseover="bigImg(10)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> C5W suflitna </button></li>
-                                        <li><button onmouseover="bigImg(11)" onmouseout="normalImg(this)" class="dropdown-item" type="button"> C10W sulfitna </button></li>
-                                        </ul>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><button onmouseover="prikazi(9)" class="dropdown-item" type="button"> R5W </button></li>
+                                                <li><button onmouseover="prikazi(10)" class="dropdown-item" type="button"> R10W </button></li>
+                                                <li><button onmouseover="prikazi(11)" class="dropdown-item" type="button"> 21/4W </button></li>
+                                                <li><button onmouseover="prikazi(12)" class="dropdown-item" type="button"> 21/5W </button></li>
+                                                <li><button onmouseover="prikazi(13)" class="dropdown-item" type="button"> 21W žmigavac </button></li>
+                                                <li><button onmouseover="prikazi(14)" class="dropdown-item" type="button"> W16W </button></li>
+                                                <li><button onmouseover="prikazi(15)" class="dropdown-item" type="button"> W21/5W </button></li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Sijalice kabinskog osvetljenja
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><button onmouseover="prikazi(16)" class="dropdown-item" type="button"> 5W ubodna </button></li>
+                                                <li><button onmouseover="prikazi(17)" class="dropdown-item" type="button"> C5W suflitna </button></li>
+                                                <li><button onmouseover="prikazi(18)" class="dropdown-item" type="button"> C10W sulfitna </button></li>
+                                                <li><button onmouseover="prikazi(19)" class="dropdown-item" type="button"> 1.2W ubodna </button></li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                              Xenon sijalice
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                              <ul>
+                                                  <li><button onmouseover="prikazi(20)" class="dropdown-item" type="button"> D1S </button></li>
+                                                  <li><button onmouseover="prikazi(21)" class="dropdown-item" type="button"> D2S </button></li>
+                                                  <li><button onmouseover="prikazi(22)" class="dropdown-item" type="button"> D3S </button></li>
+                                              </ul>
+                                          </div>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
 
 
-                            <div class="okvirSlike col-12 col-lg-4" style="height:400px; background-color: aquamarine;">
-                                
+                            <div class="okvirSlike col-12 col-lg-4" style="height:400px; background-color: rgb(185, 185, 185);">
+                                <p class="text-center mt-5 pt-5 textSlike">
+                                    Odaberite sijalicu iz liste koja vam je potrebna, <br> a ovde će se prikazati njena slika. 
+                                </p>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <p> Ukoliko niste pronašli model sijalice koji vam je potreban kontaktirajte nas ili posetite na našoj adresi. Za zameu više od jedne xenon sijalice potrebno je da nas kontaktirate kako bi smo ih blagovremeno poručili.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -404,7 +481,7 @@
 
 
         <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
-            <div class="container ps-1 pe-4">
+            <div class="container  px-sm-1 px-3 pe-sm-4">
                 <div class="offcanvas-header text-dark px-0">
                         <h5 id="offcanvasRightLabel">Ugradnja dodatne opreme / Elektronika </h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -650,7 +727,7 @@
             </div>
 
 
-            <div class="container py-5 bg-light reveal">
+            <!-- <div class="container py-5 bg-light reveal">
                 <h3 class="text-center pb-5"> KONTAKT </h3>
                 <form class="row g-3">
                     <div class="col-sm-5">
@@ -691,7 +768,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -760,8 +837,13 @@
         var image = document.querySelectorAll(".slika");
 
         var okvir = document.querySelector(".okvirSlike");
+        okvir.style.backgroundRepeat= "no-repeat";
+        okvir.style.backgroundSize= "100% 100%";
 
-        function bigImg(a) {
+        function prikazi(a) {
+            
+            document.querySelector(".textSlike").style.display = "none";
+
             switch (a) {
                 case 0:
                     okvir.style.backgroundImage = "url('img/h1.jpg')";
@@ -776,32 +858,65 @@
                     okvir.style.backgroundImage = "url('img/h11.jpg')";
                 break;
                 case 4:
-                    okvir.style.backgroundImage = "url('img/5w.jpg')";
+                    okvir.style.backgroundImage = "url('img/h1.jpg')";
                 break;
                 case 5:
-                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                    okvir.style.backgroundImage = "url('img/h3.jpg')";
                 break;
                 case 6:
-                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                    okvir.style.backgroundImage = "url('img/hb3.jpg')";
                 break;
                 case 7:
-                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                    okvir.style.backgroundImage = "url('img/hb4.jpg')";
                 break;
                 case 8:
-                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                    okvir.style.backgroundImage = "url('img/h11.jpg')";
                 break;
                 case 9:
-                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                    okvir.style.backgroundImage = "url('img/5w.jpg')";
                 break;
                 case 10:
-                    okvir.style.backgroundImage = "url('img/h1.jpg')";
+                    okvir.style.backgroundImage = "url('img/r10w.jpg')";
+                break;
+                case 11:
+                    okvir.style.backgroundImage = "url('img/21-4w.jpeg')";
+                break;
+                case 12:
+                    okvir.style.backgroundImage = "url('img/21-5w.jpg')";
+                break;
+                case 13:
+                    okvir.style.backgroundImage = "url('img/21wz.jpg')";
+                break;
+                case 14:
+                    okvir.style.backgroundImage = "url('img/w16.jpg')";
+                break;
+                case 15:
+                    okvir.style.backgroundImage = "url('img/21-5wc.jpg')";
+                break;
+                case 16:
+                    okvir.style.backgroundImage = "url('img/5wu.jpg')";
+                break;
+                case 17:
+                    okvir.style.backgroundImage = "url('img/c5w.jpg')";
+                break;
+                case 18:
+                    okvir.style.backgroundImage = "url('img/c10w.jpg')";
+                break;
+                case 19:
+                    okvir.style.backgroundImage = "url('img/1.2w.jpg')";
+                break;
+                case 20:
+                    okvir.style.backgroundImage = "url('img/d1s.png')";
+                break;
+                case 21:
+                    okvir.style.backgroundImage = "url('img/d2s.jpeg')";
+                break;
+                case 22:
+                    okvir.style.backgroundImage = "url('img/d3s.jpg')";
                 break;
             }
         }
 
-        function normalImg(x) {
-            okvir.style.backgroundImage = 'none';
-        }
     </script>
 
 
