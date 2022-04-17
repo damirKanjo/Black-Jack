@@ -9,6 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/image.webp">
     <title> P.R. Black Jack </title>
 </head>
 
@@ -17,9 +18,10 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a href="#" class="navbar-brand fw-bold"> Black Jack </a>
+            <img src="img/logo.svg" alt="logo" style="height: 4.75rem; background-color: rgb(255,193,7); border-radius: 1.5rem;">
+            <a class="navbar-brand fw-bold text-warning ms-3" style="font-size: 1.85rem;"> Black Jack </a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -29,17 +31,17 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-5">
-                        <a href="#home" class="nav-link">
+                        <a href="#home" class="nav-link navs text-warning">
                             Home
                         </a>
                     </li>
                     <li class="nav-item me-5">
-                        <a href="#about" class="nav-link">
+                        <a href="#about" class="nav-link navs text-warning">
                             O nama
                         </a>
                     </li>
                     <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle navs text-warning" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Usluge
                         </a>
@@ -51,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#info" class="nav-link">
+                        <a href="#info" class="nav-link navs text-warning">
                             Info
                         </a>
                     </li>
@@ -68,55 +70,16 @@
                 style="background-image: url('img/auto.jpg'); background-position: center; background-size: cover;">
                 <div class="col pt-5">
                     <h1 class="fw-bold"> Posetite naš servis </h1>
-                    <p class="text-secondary"> Tradicija uspešnog poslovanja duga 20 godina.</p>
+                    <p class="text-secondary"> Tradicija uspešnog poslovanja duga preko 20 godina.</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- Registracija -->
-
-
-    <section class="bg-warning text-dark py-3 p-md-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 py-1">
-                    <h3 class="mb-3 mb-md-0">
-                        Budite u toku sa novostima
-                    </h3>
-                </div>
-                <div class="col-12 col-lg-6 mt-lg-0 mt-md-3 mt-sm-0">
-                        <form class="input-group" name="form1">
-                            <input type="text" class="form-control"  name='text1' placeholder="Unesite e-mail"/>
-                            <button class="btn btn-danger btn-lg text-white" type="button" 
-                                    onclick="ValidateEmail(document.form1.text1)">
-                                Registruj se
-                            </button>
-                        </form>
-                </div>
-            </div>
-        </div>
+    <section class="container-fluid p-1" 
+             style="background-image: linear-gradient(to right, black, #2e2e2e, #d7bd51, #2e2e2e, black);">
     </section>
-
-
-    <script>
-        function ValidateEmail(inputText)
-        {
-            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z]+)*$/;
-            if(inputText.value.match(mailformat))
-            {
-                alert("You have entered a valid email address!");
-            }
-            else if(inputText.value == '')
-            {
-                alert("Enter your e-mail and try again!");
-            }
-            else {
-                alert("You have entered an invalid email address!");
-            }
-        }
-    </script>
 
 
     <!-- O firmi -->
@@ -144,7 +107,7 @@
                         </a>
                     </button>
                 </div>
-                <img class="img-fluid w-50 d-none d-lg-block" src="img/auto.png" alt="service">
+                <img class="py-5 img-fluid w-50 d-none d-lg-block" src="img/aside.png" alt="service">
             </div>
         </div>
     </section>
@@ -555,8 +518,7 @@
                         </p>
                       </div>
                       <div class="col-12 text-dark pt-3">
-                        <p> Poslovi ugradnje i popravke elektronskih komponenti se uobičajeno rešavaju unutar jednog radnog dana kada imate zakazan termin, osim ukoliko nije potrebno čekati neki od delova. Što se tiče opreme i 
-                            zamenskih delova možete ih vi lično kupiti negde ili kod nas ukoliko ima na stanju. Ukoliko se odlučite na polovne zamenske delove nabavljate ih vi na sopstvenu odgovornost.
+                        <p> Poslovi ugradnje i popravke elektronskih komponenti se uobičajeno rešavaju unutar jednog radnog dana kada imate zakazan termin, osim ukoliko nije potrebno čekati neki od delova.
                         </p>
                       </div>
                      </div>
@@ -693,12 +655,13 @@
                 </div>
 
 
+
+
                 <div class="col-12 col-lg-9 mb-3 reveal">
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%&amp;
-                                height=100%&amp;hl=en&amp;q=black jack&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            src="https://maps.google.com/maps?q=Black%20Jack%20Sremska%201%20sombor&t=&z=17&ie=UTF8&iwloc=&output=embed">
                             </iframe>
                         </div>
                         <style>
@@ -725,54 +688,7 @@
                 </div>
 
             </div>
-
-
-            <!-- <div class="container py-5 bg-light reveal">
-                <h3 class="text-center pb-5"> KONTAKT </h3>
-                <form class="row g-3">
-                    <div class="col-sm-5">
-                        <p>
-                            Pišite nam, a mi ćemo vam odgovoriti unutar 24h.
-                        </p>
-                        <p>
-                            <span class="bi-geo-alt-fill"></span>
-                            Sombor, SRB
-                        </p>
-                        <p>
-                            <span class="bi-phone-fill"></span>
-                            +381 66 55 8 0 916
-                        </p>
-                        <p>
-                            <span class="bi-envelope-fill"></span>
-                            dejan@blackjack.com
-                        </p>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="row">
-                            <div class="col-sm-6 pt-3 pt-sm-0">
-                                <input type="email" class="form-control" placeHolder="Ime" id="inputEmail4">
-                            </div>
-                            <div class="col-sm-6 pt-3 pt-sm-0">
-                                <input type="text" class="form-control" placeHolder="Email" id="inputPassword4">
-                            </div>
-                            <div class="col-12 pt-5 pt-sm-3">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                        id="floatingTextarea2" style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2"> Komentar </label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-end pt-3">
-                                <button type="submit" class="btn btn-warning"> Pošalji </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div> -->
-
-        </div>
     </section>
-
 
     <footer class="bg-white text-dark border-top border-dark">
         <div class="container">
@@ -811,6 +727,7 @@
             <p class="my-0"> All copy rights reserved. Black Jack </p>
         </div>
     </section>
+
 
 
     <script>
