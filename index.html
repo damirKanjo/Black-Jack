@@ -28,20 +28,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navmenu">
+           <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-5">
-                        <a href="#home" class="nav-link navs text-warning">
-                            Home
+                        <a href="#home" class="nav-link navs">
+                            Naslovna
                         </a>
                     </li>
                     <li class="nav-item me-5">
-                        <a href="#about" class="nav-link navs text-warning">
+                        <a href="#about" class="nav-link navs">
                             O nama
                         </a>
                     </li>
                     <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle navs text-warning" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle navs" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Usluge
                         </a>
@@ -53,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#info" class="nav-link navs text-warning">
+                        <a href="#info" class="nav-link navs">
                             Info
                         </a>
                     </li>
@@ -64,7 +64,7 @@
 
     <!-- Naslovna slika -->
 
-    <section class="bg-cleardark">
+    <section class="bg-cleardark" id="home">
         <div class="container">
             <div class="row pt-5 pb-2"
                 style="background-image: url('img/auto.jpg'); background-position: center; background-size: cover;">
@@ -86,28 +86,28 @@
 
 
     <section class="bg-white text-dark py-5 fade-in-up" id="about">
-        <div class="container">
+        <div class="container py-lg-3 py-0">
             <div class="d-md-flex align-items-center
                         justify-content-between">
                 <div>
-                    <h1 class="text-warning"> O nama </h1>
+                    <h1 class="text-warning pb-lg-5 pb-0"> O nama </h1>
                     <p class="lead">
                         Autoelektričarska zanatska radnja "Black Jack" je osnovana 2001. godine
                         sa ciljem pružanja najkvalitetnijih usluga u oblasti autoelektrike.
                         Naša primarna delatnost je servisiranje alternatora i anlasera svih motornih vozila.
                         Posedujemo najsavremeniju opremu koja garantuje sigurnost i pouzdanost
                         pri dijagnostikovanju kvarova i popravci vozila.
-                        Pored četvrt veka uspešnog poslovanja, pohvala i potvrda našem načinu poslovanju
+                        Pored gotovo četvrt veka uspešnog poslovanja, pohvala i potvrda našem načinu poslovanju
                         su naravno i zadovoljne mušerije!
                     </p>
-                    <button class="col-12 py-3 col-md-6 fw-bold btn btn-dark btn-lg">
+                    <button class="col-12 py-3 col-md-6 fw-bold btn btn-dark btn-lg my-lg-3 my-0">
                         <a class="link-warning text-decoration-none"
                             href="https://www.google.com/maps/place/BLACK+JACK/@45.7740534,19.1279563,17z/data=!4m7!3m6!1s0x475cb597da4655bd:0xce077ce6b0581222!8m2!3d45.7740534!4d19.130145!9m1!1b1?hl=sr">
                             Recenzije
                         </a>
                     </button>
                 </div>
-                <img class="py-5 img-fluid w-50 d-none d-lg-block" src="img/aside.png" alt="service">
+                <img class="py-5 img-fluid w-50 d-none d-lg-block" src="img/logo.svg" style="max-height: 500px;" alt="service">
             </div>
         </div>
     </section>
@@ -121,7 +121,7 @@
     <!-- Usluge  -->
 
     <section class="py-5">
-        <div class="container">
+        <div class="container py-lg-5 py-0">
             <div class="row text-center">
                 <div class="col-12 text-start reveal m-0">
                     <h1 class="m-0"> Usluge </h1>
@@ -141,10 +141,10 @@
                     <div class="card bg-custom reveal">
                         <img src="img/svetla.jpg" class="card-img-top" alt="Svetlosna signalizacija">
                         <div class="card-body text-start">
-                            <h5 class="card-title"> Zamana svetlosne signalizacije </h5>
-                            <p class="card-text"> Vršimo zamenu svih tipova sijalica na putničkom i teretnom programu.
+                            <h5 class="card-title"> Zamana svetlosne signalizacije         </h5>
+                            <p class="card-text"> Usluge zamene svih tipova sijalica na putničkom i teretnom    programu.
                             </p>
-                            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Opširnije </button>
+                            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Opširnije > </button>
                         </div>
                     </div>
                 </div>
@@ -704,7 +704,7 @@
                 </div>
                 <div class="col-4 col-sm-1">
                     <div class="h1 mb-3 text-end">
-                        <i class="bi-linkedin"></i>
+                        <a href="facebook.com"><i class="bi-linkedin"> </i> </a>
                     </div>
                 </div>
                 <div class="col-4 col-sm-1">
@@ -714,7 +714,7 @@
                 </div>
                 <div class="col-4 col-sm-1">
                     <div class="h1 mb-3 text-start">
-                        <i class="bi-facebook"></i>
+                        <a href="https://www.instagram.com/dejanblackjack/"><i class="bi-facebook"></i></a>
                     </div>
                 </div>
             </div>
