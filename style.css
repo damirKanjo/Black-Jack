@@ -13,6 +13,19 @@
 
 .navs {
     font-size: 1.25rem;
+    color: black;
+}
+
+.navs:active {
+    color:black;
+}
+
+.navs:visited {
+    color:black;
+}
+
+.navs:hover{
+    color: rgb(237, 161, 47);
 }
 
 .offcanvas-start, .offcanvas-end, .offcanvas-bottom {
