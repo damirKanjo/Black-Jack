@@ -44,3 +44,26 @@
     transform: translateY(0px);
     opacity: 1;
 }
+
+.naslovAnimacija {
+    position: relative;
+    opacity: 0;
+    animation: tekst1 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tekst1 {
+    0% { top: -50px;}
+    100% { top :0px; opacity: 1;}
+}
+
+.podAnimacija {
+    opacity: 0;
+    animation: tekst2 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tekst2 {
+    0% { top: 50px;}
+    100% { top :0px; opacity: 1;}
+}
