@@ -94,7 +94,18 @@
             </div>
         </div>
     </section>
+    
+                                                          
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let naslov = document.querySelector('.naslovAnimacija');
+            naslov.classList.add('aktivacija');
 
+            let podnaslov = document.querySelector('.podAnimacija');
+            podnaslov.classList.add('appear');
+        }, false);
+    </script>
+                                                          
 
     <section class="container-fluid p-1" 
              style="background-image: linear-gradient(to right, black, #2e2e2e, #d7bd51, #2e2e2e, black);">
@@ -121,13 +132,21 @@
                     </p>
                     <button class="col-12 py-3 col-md-6 fw-bold btn btn-dark btn-lg my-lg-3 my-0">
                         <a class="link-warning text-decoration-none"
-                            href="" target="_blank">
+                            href="https://www.google.com/maps/place/BLACK+JACK/@45.7740534,19.1279563,17z/data=!4m7!3m6!1s0x475cb597da4655bd:0xce077ce6b0581222!8m2!3d45.7740534!4d19.130145!9m1!1b1?hl=sr">
                             Recenzije
                         </a>
                     </button>
                 </div>
-                <img class="py-5 img-fluid w-50 d-none d-lg-block" src="img/logo.svg" style="max-height: 500px;" alt="service">
-            </div>
+                    <a class="py-5 img-fluid w-50 d-none d-lg-block rec"
+                        href="https://www.google.com/maps/place/BLACK+JACK/@45.7740534,19.1279563,17z/data=!4m7!3m6!1s0x475cb597da4655bd:0xce077ce6b0581222!8m2!3d45.7740534!4d19.130145!9m1!1b1?hl=sr">
+                        <img 
+                         src="img/recenzije.png" 
+                         style="
+                                max-width: 450px;" 
+                         alt="service"
+                        >
+                    </a>
+                </div>
         </div>
     </section>
 
@@ -286,22 +305,21 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="container-fluid bg-white text-dark">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 text-center">
-                                    <img src="img/logo.svg" style="height: 50px;" alt="logo">
-                                </div>
-                                <div class="col-12 text-center">
-                                    <p> Company name - autoelektričarska zanatska radnja </p>
-                                </div>
+                </section>
+            </div>
+                                                               
+            <div class="container-fluid bg-white text-dark"
+                style="position: relative; bottom: 0;  left: 0;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <img src="img/logo.svg" style="height: 50px;" alt="logo">
                             </div>
+                                <div class="col-12 text-center">
+                                    <p> Company name - autoelektricarska zanatska radnja </p>
+                                </div>
                         </div>
                     </div>
-
-                </section>
-
             </div>
         </div>
     
