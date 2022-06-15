@@ -1,7 +1,6 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
 .bg-cleardark {
     background-color: black;
 }
@@ -11,8 +10,23 @@
     box-shadow: 5px white;
 }
 
+.rec {
+    transition: 0.85s;
+}
+
+a.rec:hover {
+    transform: scale(1.15);
+    background: rgb(51, 48, 48);
+    cursor: pointer;
+}
 .visina {
     height: 250px;
+}
+
+@media screen and (max-width: 1500px) {
+    a.rec:hover {
+        transform: scale(1, 1.05);
+    }
 }
 
 .navs {
@@ -52,7 +66,7 @@
 .naslovAnimacija {
     position: relative;
     opacity: 0;
-    animation: tekst1 3s linear;
+    animation: tekst1 1.5s linear;
     animation-fill-mode: forwards;
 }
 
@@ -63,7 +77,7 @@
 
 .podAnimacija {
     opacity: 0;
-    animation: tekst2 3s linear;
+    animation: tekst2 2.25s linear;
     animation-fill-mode: forwards;
 }
 
