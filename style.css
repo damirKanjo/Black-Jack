@@ -1,8 +1,32 @@
+* {
+    font-family: system-ui;
+}
+
+html {
+    background-color: white !important;
+    box-sizing: content-box;
+}
+body {
+    background-color: white !important;
+    box-sizing: content-box;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 40%;
+    transition: 0.5s; 
+    transition-timing-function: linear;
+}
+
+.sticky:hover {
+    opacity: 100%;
+}
+
+
 ::-webkit-scrollbar {
     display: none;
-}
-.bg-cleardark {
-    background-color: black;
 }
 
 .bg-custom {
@@ -10,17 +34,17 @@
     box-shadow: 5px white;
 }
 
-.rec {
-    transition: 0.85s;
+.visina {
+    height: 300px;
 }
 
-a.rec:hover {
-    transform: scale(1.15);
-    background: rgb(51, 48, 48);
-    cursor: pointer;
+.boja {
+    background-color: #f36639;
+    border-radius: 0 !important;
 }
-.visina {
-    height: 250px;
+
+.boja:hover {
+    opacity: 65%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -29,22 +53,45 @@ a.rec:hover {
     }
 }
 
+
+@media screen and (max-width: 1200px) {
+    #pomoc {
+        float: left !important;
+    }
+}
+
+
+.hovpr:hover {
+    background-color: #2e2e2e;
+    opacity: 10%;
+}
+
 .navs {
     font-size: 1.25rem;
-    color: black;
+    height: 70px;
+    width: 150px;
+    padding: 0 !important;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
 }
 
-.navs:active {
-    color:black;
+.navs:hover {
+    color: white;
+    text-decoration: none;
 }
 
-.navs:visited {
-    color:black;
+.nav-item {
+    border-left: 2px solid rgba(255, 255, 0, 0.311);
+    width: 150px;
 }
 
-.navs:hover{
-    color: rgb(237, 161, 47);
+.nav-item:hover {
+    background-color: #2e2e2e56;
 }
+
+
 
 .offcanvas-start, .offcanvas-end, .offcanvas-bottom {
     width: 100%;
@@ -84,4 +131,25 @@ a.rec:hover {
 @keyframes tekst2 {
     0% { top: 50px;}
     100% { top :0px; opacity: 1;}
+}
+
+
+.mapouter {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+}
+
+.gmap_iframe {
+    width: 100% !important;
+    height: 100% !important;
 }
