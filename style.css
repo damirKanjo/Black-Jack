@@ -183,3 +183,7 @@ body {
 .bgc {
     background-color: #f36639 !important;
 }
+
+button.bgc:hover {
+    background-color: #fd855e;
+}
