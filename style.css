@@ -174,3 +174,8 @@ body {
 .nobord {
     border: none;
 }
+
+.nav-link.active {
+    background-color: #2e2e2e;
+    color: rgb(252, 252, 252) !important;
+}
