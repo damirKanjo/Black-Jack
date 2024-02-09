@@ -58,6 +58,10 @@ body {
     #pomoc {
         float: left !important;
     }
+    .marg {
+        margin: 0 !important;
+        padding: 0;
+    }
 }
 
 
@@ -152,4 +156,21 @@ body {
 .gmap_iframe {
     width: 100% !important;
     height: 100% !important;
+}
+
+.cd {
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: #888888;
+    line-height: 3;
+    padding: 0;
+}
+
+.cd1 {
+    color: #f36639;
+}
+
+.nobord {
+    border: none;
 }
