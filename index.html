@@ -21,7 +21,7 @@
     </div> -->
 
 
-    <script>
+    <!--  <script>
         // When the user scrolls the page, execute myFunction 
         window.onscroll = function() {myFunction()};
         
@@ -31,7 +31,7 @@
           var scrolled = (winScroll / height) * 100;
           document.getElementById("myBar").style.width = scrolled + "%";
         }
-    </script>
+    </script> -->
 
 
 
@@ -53,8 +53,8 @@
 
     <nav class="navbar navbar-expand-lg p-0" style="background-color: #f36639;">
         <div class="container">
-            <img src="img/logo.svg" alt="logo" style="height: 4rem; margin-right: 30px;">
-            <a class="navbar-brand fw-bold ms-5" style="font-size: 1.85rem; color:rgb(46, 45, 45)"> BLACK JACK </a>
+            <img class="marg" src="img/logo.svg" alt="logo" style="height: 4rem; margin-right: 30px;">
+            <a class="navbar-brand fw-bold marg" style="font-size: 1.85rem; color:rgb(46, 45, 45); margin-left: 20px;"> BLACK JACK </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse" id="navmenu" style="height: 70px;">
                 <ul class="navbar-nav ms-auto" style="height: 70px;">
                     <li class="nav-item">
-                        <a href="./contact.html" class="nav-link navs">
+                        <a href="#home" class="nav-link navs">
                             HOME
                         </a>
                     </li>
@@ -114,8 +114,8 @@
 
     <section class="bg-dark" id="home">
         <div class="container px-4">
-            <div class="row pt-5 pb-2"
-                style="background-image: url('img/auto.jpg'); background-position: center; background-size: cover;">
+            <div class="row pt-5 pb-5"
+                 style="background-image: url('img/auto.jpg'); background-position: center; background-size: cover;">
                 <div class="col pt-5">
                     <h1 class="fw-bold naslovAnimacija"> Posetite naš servis </h1>
                     <p class="text-secondary podAnimacija"> Tradicija uspešnog poslovanja duga preko 20 godina.</p>
@@ -146,8 +146,8 @@
 
     <!-- Program ponude -->
 
-    <section class="bg-white text-dark pt-5 pb-3" id="info">
-        <div class="container mb-md-5">
+    <section class="bg-white text-dark pt-5">
+        <div class="container mb-md-5 pt-3">
             <div class="row">
                 
                 <div class="col-12 col-md-6 col-lg-3 mb-3">
@@ -221,7 +221,7 @@
 
     <section class="bg-white text-dark fade-in-up py-4 reveal" id="about">
         <div class="container podAnimacija">
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-xl-6" style="padding-right: 15px;">
                     <h1 style="color: #f36639;"> O NAMA </h1>
                     <p class="lead" style="  text-align: justify; text-justify: inter-word;">
@@ -700,82 +700,8 @@
 
 
 
-    <!-- Infoormacije -->
-
-    <section class="bg-white text-dark pt-5 pb-3" id="info">
-        <div class="container mb-md-5">
-            <div class="row">
-                <div class="col-12 mb-3 reveal">
-                    <h2 style="color: #f36639;"> INFORMACIJE </h2>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center visina">
-                            <div class="h1 mb-3">
-                                <i class="bi-info-square"></i>
-                            </div>
-                            <h3 class="card-title mb-3"> Podaci o firmi </h3>
-                            <p class="card-text pt-3">
-                                PIB: 101844484 <br>
-                                Šifra delatnosti: 4520
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center visina">
-                            <div class="h1 mb-3">
-                                <i class="bi-alarm"></i>
-                            </div>
-                            <h3 class="card-title mb-3"> Radno vreme </h3>
-                            <p class="card-text pt-3">
-                                Ponedeljak - Petak : 09h - 17h <br>
-                                Subota - Nedelja : Zatvoreno
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center visina">
-                            <div class="h1 mb-3">
-                                <i class="bi-telephone"></i>
-                            </div>
-                            <h3 class="card-title mb-3"> Kontakt </h3>
-                            <p class="card-text pt-3">
-                                Mobilni : 063 580 916 <br>
-                                Fiksni : 025 05650 0650
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center visina">
-                            <div class="h1 mb-3">
-                                <i class="bi-mailbox"></i>
-                            </div>
-                            <h3 class="card-title mb-3"> Mail </h3>
-                            <p class="card-text pt-3">
-                                E-mail: kanjo@sbb.rs <br>
-                                E-mail: dejankanjo@blackjack.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </section>
-
-
     <section class="col-12" style="background-color: #f2f2f2;">
-                    <div class="mapouter">
+                    <div class="mapouter reveal">
                         <div class="gmap_canvas rounded">
                             <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                             src="https://maps.google.com/maps?q=Black%20Jack%20Sremska%201%20sombor&t=&z=17&ie=UTF8&iwloc=&output=embed">
@@ -784,23 +710,126 @@
                    </div>
     </section>
 
-    <footer class="bg-white text-dark">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center pt-3">
-                    <img src="img/logo.svg" style="height: 100px;" alt="logo">
+
+
+
+    <!-- Infoormacije -->
+
+    <section class="bg-dark text-dark pt-5 pb-3" id="info">
+        <div class="container mb-md-5">
+            <div class="row pt-3">
+                <div class="col-12 mb-3 reveal">
+                    <h2 style="color: #f36639;"> INFORMACIJE </h2>
                 </div>
+
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
+                    <div class="card bg-dark text-light nobord">
+                        <div class="card-body text-center visina">
+                            <div class="row">
+                                <div class="col-1" style="margin: auto; padding: 0;">
+                                    <i class="bi-info-square cd cd1" style="font-size: 15px;"></i>
+                                </div>
+                                <div class="col-11" style="margin: 0 !important; padding: 0 !important;">
+                                    <p class="card-title mb-3 cd" style="margin: 0 !important; padding: 0 !important; color: #f2f2f2; font-size: 15px;"> PODACI O FIRMI </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="card-text pt-3 cd">
+                                    Naziv: BLACK JACK AUTOELEKTRIČARSKA ZANATSKA RADNJA KANJO DEJAN PR SOMBOR <br>
+                                    PIB: 101844484 <br>
+                                    Šifra delatnosti: 4520 <br>
+                                    Matični broj: 55174113
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
+                    <div class="card bg-dark text-light nobord">
+                        <div class="card-body text-center visina">
+                            <div class="row">
+                                <div class="col-1" style="margin: auto; padding: 0;">
+                                    <i class="bi-alarm cd cd1" style="font-size: 15px;"></i>
+                                </div>
+                                <div class="col-11" style="margin: 0 !important; padding: 0 !important;">
+                                    <p class="card-title mb-3 cd" style="margin: 0 !important; padding: 0 !important; color: #f2f2f2; font-size: 15px;"> RADNO VREME </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="card-text pt-3 cd">
+                                    Ponedeljak  : 09h - 17h <br>
+                                    Utorak : 09h - 17h <br>
+                                    Sreda : 09h - 17h <br>
+                                    Četvrtak : 09h - 17h <br>
+                                    Petak : 09h - 17h <br>
+                                    Subota - Nedelja : Zatvoreno
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
+                    <div class="card bg-dark text-light nobord">
+                        <div class="card-body text-center visina">
+                            <div class="row">
+                                <div class="col-1" style="margin: auto; padding: 0;">
+                                    <i class="bi bi-wrench-adjustable cd cd1" style="font-size: 15px;"></i>
+                                </div>
+                                <div class="col-11" style="margin: 0 !important; padding: 0 !important;">
+                                    <p class="card-title mb-3 cd" style="margin: 0 !important; padding: 0 !important; color: #f2f2f2; font-size: 15px;"> USLUGE </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="card-text pt-3 cd">
+                                    Popravka anlasera <br>
+                                    Popravka alternatora <br>
+                                    Zamena svetlosne signalizacije <br>
+                                    Ugradnja dodatne opreme
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-3 reveal">
+                    <div class="card bg-dark text-light nobord">
+                        <div class="card-body text-center visina">
+                            <div class="row">
+                                <div class="col-1" style="margin: auto; padding: 0;">
+                                    <i class="bi-mailbox cd cd1" style="font-size: 15px;"></i>
+                                </div>
+                                <div class="col-11" style="margin: 0 !important; padding: 0 !important;">
+                                    <p class="card-title mb-3 cd" style="margin: 0 !important; padding: 0 !important; color: #f2f2f2; font-size: 15px;"> KONTAKT </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="card-text pt-3 cd">
+                                <i class="bi bi-geo-alt-fill cd1"></i> 25000 Sombor, Sremska 1 <br>
+                                <i class="bi bi-telephone-fill cd1"></i> Mobilni : 063 580 916 <br>
+                                <i class="bi bi-envelope-at-fill cd1"></i></i> E-mail: kanjo@sbb.rs <br>
+                                <i class="bi bi-envelope-at-fill cd1"></i> E-mail: dejankanjo@blackjack.com
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </footer>
-
-
-    <section class="bg-dark">
-        <div class="container text-center">
-            <p class="my-0"> Copyright &copy; 2024. P.R.Black Jack. All rights reserved.</p>
-        </div>
     </section>
 
+
+
+    <footer>
+        <section class="py-3" style="background-color: #fff; color: #434f53;">
+            <div class="container text-center">
+                <p class="my-0" style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  font-size: 9px;"> Copyright &copy; 2024. P.R.Black Jack. All rights reserved.</p>
+            </div>
+        </section>
+    
+    </footer>
 
 
     <script>
