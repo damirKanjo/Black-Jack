@@ -35,7 +35,7 @@ body {
 }
 
 .boja {
-    background: rgb(243, 102, 57);
+    background-color: #f36639;
     border-radius: 0 !important;
 }
 
@@ -171,12 +171,12 @@ body {
 }
 
 .bgc {
-    background: rgb(243, 102, 57);
+    background-color: #F86734;
     width: 100%;
 }
 
 button.bgc:hover {
-    background: rgb(243, 102, 57);
+    background-color: #f36639;
 }
 
 .logosize {
