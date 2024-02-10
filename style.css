@@ -10,17 +10,19 @@ body {
     background-color: white !important;
     box-sizing: content-box;
 }
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    opacity: 30%;
     transition: 0.5s; 
+    opacity: 50%;
     transition-timing-function: linear;
 }
 
 .sticky:hover {
+    top: 0;
     opacity: 100%;
 }
 
@@ -61,6 +63,7 @@ body {
 }
 
 
+
 .navs {
     font-size: 1.25rem;
     height: 70px;
@@ -86,6 +89,34 @@ body {
     background-color: #2e2e2e56;
 }
 
+
+.hov:hover {
+    opacity: 87%;
+}
+
+
+@media screen and (max-width: 990px) {
+    .nav-item {
+        border: 0px !important;
+        width: 100% !important;
+    }
+    a.navs {
+        display: block;
+        border: 0px !important;
+        width: 100% !important;
+        padding-top: 15px !important;
+    }
+    .sticky {
+        position: relative;
+    }
+    .backToTop {
+        display: block !important;
+    }
+    .backToTop:hover {
+        opacity: 85%;
+        cursor: pointer;
+    }
+}
 
 
 .offcanvas-start, .offcanvas-end, .offcanvas-bottom {
