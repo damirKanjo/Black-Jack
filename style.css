@@ -188,3 +188,8 @@ button.bgc:hover {
 img.logosize:hover {
     opacity: 55%;
 }
+
+.offcanvas {
+    --bs-offcanvas-height: 100%;
+    overflow: auto;
+}
