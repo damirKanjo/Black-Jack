@@ -44,10 +44,47 @@
                 <div class="col-xl-6">
                     <p id="pomoc" style="margin: 0; float: right;"> POTREBNA VAM JE POMOĆ? KONTAKTIRAJTE NAS! 063 580 916 </p>
                 </div>
-              </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6">
+                    <p class="zatvoreno" style="font-size:medium; margin: 0;"> <i class="bi bi-dash-circle-fill" style="color: #ff0000; font-size:medium;"></i> ZATVORENO </p>
+                    <p class="otvoreno" style="font-size:x-small; margin: 0;"> <i class="bi bi-check-circle-fill" style="color: #2dff03; font-size:medium;"></i>  OTVORENO </p>
+                </div>
+                <div class="col-6">
+                    <p class="date" style="margin: 0; float: right;"> </p>
+                </div>
+            </div>
         </div>
     </section>
 
+
+    <script>
+    window.onload(display_ct());
+
+    function display_c(){
+            var refresh=1000; // Refresh rate in milli seconds
+            mytime=setTimeout('display_ct()',refresh)
+        }
+        
+    function display_ct() {
+            var x = new Date();
+            var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+            var x1 = x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear();
+            x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ampm;
+            document.querySelector(".date").innerHTML = x1;
+            let cas = x.getHours();
+            if (cas >= 9 && cas < 17) {
+                document.querySelector('.otvoreno').style.display = 'block';
+                document.querySelector('.zatvoreno').style.display = "none";
+            }
+            else {
+                console.log('ZATVORENO');
+                document.querySelector('.otvoreno').style.display = "none";
+                document.querySelector('.zatvoreno').style.display = 'block';
+            }
+            display_c();
+        }
+    </script>
 
     <nav class="navbar navbar-expand-lg p-0 bgc">
         <div class="container">
@@ -173,7 +210,7 @@
                             </div>
                             <h3 class="card-title mb-3"> <b>TERETNI</b> </br> PROGRAM </h3>
                             <p class="card-text pt-3">
-                                Servis anlasera i alternatora kamiona, autobusa, radnih i poljoprivrednih mašina
+                                Servis anlasera i alternatora na transportnom programu
                             </p> 
                         </div>
                     </div>
@@ -187,7 +224,7 @@
                             </div>
                             <h3 class="card-title mb-3"> <b>ELEKTRIČNA</b> </br> MERENJA </h3>
                             <p class="card-text pt-3">
-                                Provera punjenja alternatora, ispravnosti akumulatora i kvaliteta elekrtrične instalacije na vozilu
+                                Provera punjenja alternatora i kvaliteta elekrtrične instalacije na vozilu
                             </p> 
                         </div>
                     </div>
