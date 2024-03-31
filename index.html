@@ -73,12 +73,12 @@
             x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ampm;
             document.querySelector(".date").innerHTML = x1;
             let cas = x.getHours();
-            if (cas >= 9 && cas < 17) {
+let         day = x.getDay();       // mon-1 tue-2 so on...
+            if (cas >= 9 && cas < 17 && day<=5 && day>0) {
                 document.querySelector('.otvoreno').style.display = 'block';
                 document.querySelector('.zatvoreno').style.display = "none";
             }
             else {
-                console.log('ZATVORENO');
                 document.querySelector('.otvoreno').style.display = "none";
                 document.querySelector('.zatvoreno').style.display = 'block';
             }
@@ -268,7 +268,7 @@
                         Posedujemo najsavremeniju opremu koja garantuje sigurnost i pouzdanost
                         pri dijagnostikovanju kvarova i popravci vozila.
                         Pored gotovo četvrt veka uspešnog poslovanja, pohvala i potvrda našem načinu poslovanju
-                        su naravno i zadovoljne mušerije!
+                        su naravno i zadovoljne mušterije!
                     </p>
                     <button class="col-12 py-3 col-md-6 fw-bold btn btn-lg my-lg-3 my-0 bgc">
                         <a class="text-decoration-none"
@@ -433,7 +433,8 @@
                 <div class="offcanvas-body" style="text-align: justify;">
                     <p> U ponudi imamo sve standardne modele sijalica koje se koriste u automobilima. Kod nas možete zameniti sijalice spoljnjeg signalizacionog osvetljenja, kao i svetla kabine. 
                         Zamenu signalizacionog osvetljenja radimo bez potrebe za prethodnim zakazivanjem termina isključivo za kratko, dugačko, poziciono svetlo! Vršimo zamene dotrjalih utičnica i grla sijalica. 
-                        Takođe nudimo uslugu zamene zadnjih lampi na automobilu i auto prikolicama. Ukoliko niste pronašli model sijalice koji vam je potreban kontaktirajte nas ili posetite na našoj adresi.
+                        Takođe nudimo uslugu zamene zadnjih lampi na automobilu i auto prikolicama. Ukoliko niste pronašli model sijalice koji vam je potreban kontaktirajte nas ili posetite na našoj adresi. 
+                        Za zameu više od jedne xenon sijalice potrebno je da nas kontaktirate kako bi smo ih blagovremeno poručili.
                     </p>
                 </div>
 
