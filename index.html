@@ -67,14 +67,15 @@
         }
         
     function display_ct() {
+            var block = 1;
             var x = new Date();
             var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
             var x1 = x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear();
             x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ampm;
             document.querySelector(".date").innerHTML = x1;
             let cas = x.getHours();
-let         day = x.getDay();       // mon-1 tue-2 so on...
-            if (cas >= 9 && cas < 17 && day<=5 && day>0) {
+            let day = x.getDay();       // mon-1 tue-2 so on...
+            if (cas >= 9 && cas < 17 && day<=5 && day>0 && block == 0) {
                 document.querySelector('.otvoreno').style.display = 'block';
                 document.querySelector('.zatvoreno').style.display = "none";
             }
