@@ -45,6 +45,48 @@ body {
     opacity: 65%;
 }
 
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    background-color: #2e2e2e;
+    opacity: 0.91;
+}
+
+#myPopup{
+    background-color: #ffffff;
+    color: #000;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 30%;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    z-index: 1000;
+}
+
+#myPopup button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #989090;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#myPopup button:hover {
+    color: #000;
+}
+
 @media screen and (max-width: 1500px) {
     a.rec:hover {
         transform: scale(1, 1.05);
