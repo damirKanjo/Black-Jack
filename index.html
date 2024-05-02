@@ -147,6 +147,59 @@ let         day = x.getDay();       // mon-1 tue-2 so on...
         }
     </script>
 
+
+
+
+
+
+    <!-- //***** POPUP TEXT *****//   -->
+    <div class="back">
+
+    </div>
+
+    <div id="myPopup">
+        <button id="close">&times;</button>
+        <h2 style="text-align: center; padding-bottom: 20px; border-bottom: 1px solid black; margin-bottom: 10px;"> OBAVEŠTENJE </h2>
+        <p>
+            Obaveštavamo vas da servis neće raditi u periodu od <b>01.05.</b> do <b>07.05.2024.</b> zbog praznika. 
+        </p>
+
+    </div>
+
+    <script>
+
+
+//*****************************************************
+        POPUP ZA NERADNE DANE!!!
+        *****************************************************//
+        //***** U funkciji display_ct() promeniti varjablu block na 1 *****//
+
+        window.onload = popup();
+        var stop;
+        let block = 1;
+
+        function popup() {
+          document.querySelector("#myPopup").style.display = "block";
+          document.querySelector(".back").style.display = "block";
+          stop = 1;
+        }
+        document.querySelector("#close").addEventListener("click", function() {
+                document.querySelector("#myPopup").style.display = "none";
+                stop = 0; 
+                if(stop == 0){
+                    document.body.style.overflow = "scroll";
+                }
+                document.querySelector('.back').style.display = 'none';
+            }
+        )
+        if(stop == 1){
+            document.body.style.overflow = "hidden";
+        }
+    </script>
+
+
+    
+
     
     <!-- Naslovna slika -->
 
