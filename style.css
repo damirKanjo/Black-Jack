@@ -59,7 +59,8 @@ body {
 #myPopup{
     background-color: #ffffff;
     color: #000;
-    width: 450px;
+    width: 85vw;
+    max-width: 450px;
     padding: 30px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
