@@ -89,6 +89,31 @@ body {
     color: #000;
 }
 
+
+.dropdown-item{
+    padding: 15px 30px;
+}
+
+.dropdown-menu-end[data-bs-popper]{
+    right: auto;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.nav-item:hover {
+    background-color: transparent !important;
+}
+
+.nav-link:focus{
+    color: white !important;
+}
+
+li.nav-item:hover{
+    background-color: #524c4c !important;
+    transition: 0.7s;
+}
+
+
+
 @media screen and (max-width: 1500px) {
     a.rec:hover {
         transform: scale(1, 1.05);
@@ -129,15 +154,9 @@ body {
     width: 150px;
 }
 
-.nav-item:hover {
-    background-color: #2e2e2e56;
-}
-
-
 .hov:hover {
     opacity: 87%;
 }
-
 
 @media screen and (max-width: 990px) {
     .nav-item {
