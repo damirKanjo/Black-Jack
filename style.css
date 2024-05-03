@@ -105,7 +105,7 @@ body {
 }
 
 li.nav-item:hover{
-    background-color: transpatrent !important;
+    background-color: #2e2e2e56;
     transition: 0.7s;
 }
 
