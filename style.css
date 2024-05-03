@@ -163,6 +163,9 @@ li.nav-item:hover{
     .dropdown-item{
         color: white;
     }
+    button.dropdown-item{
+        color: rgb(0, 0, 0);
+    }
     a.navs {
         display: block;
         border: 0px !important;
