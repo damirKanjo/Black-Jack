@@ -159,14 +159,6 @@ li.nav-item:hover{
         border: 0px !important;
         width: 100% !important;
     }
-    .nav-item:hover{
-        background-color: transparent !important;
-        text-decoration: underline !important;
-        text-underline-offset: 13px;
-    }
-    a.dropdown-item{
-        text-decoration: none !important;
-    }
     a.navs {
         display: block;
         border: 0px !important;
