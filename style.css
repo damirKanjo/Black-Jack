@@ -92,6 +92,7 @@ body {
 
 .dropdown-item{
     padding: 15px 30px;
+    color: rgb(0, 0, 0);
 }
 
 .dropdown-menu-end[data-bs-popper]{
@@ -158,6 +159,9 @@ li.nav-item:hover{
     .nav-item {
         border: 0px !important;
         width: 100% !important;
+    }
+    .dropdown-item{
+        color: white;
     }
     a.navs {
         display: block;
