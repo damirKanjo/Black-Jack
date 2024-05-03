@@ -166,6 +166,10 @@ li.nav-item:hover{
     button.dropdown-item{
         color: rgb(0, 0, 0);
     }
+    .text-secondary{
+        color: white !important;
+        opacity: 0.65 !important;
+    }
     a.navs {
         display: block;
         border: 0px !important;
