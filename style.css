@@ -99,16 +99,12 @@ body {
     border-radius: 0px 0px 8px 8px;
 }
 
-.nav-item:hover {
-    background-color: transparent !important;
-}
-
 .nav-link:focus{
     color: white !important;
 }
 
 li.nav-item:hover{
-    background-color: #524c4c !important;
+    background-color: transpatrent !important;
     transition: 0.7s;
 }
 
@@ -158,10 +154,18 @@ li.nav-item:hover{
     opacity: 87%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
     .nav-item {
         border: 0px !important;
         width: 100% !important;
+    }
+    .nav-item:hover{
+        background-color: transparent !important;
+        text-decoration: underline !important;
+        text-underline-offset: 13px;
+    }
+    a.dropdown-item{
+        text-decoration: none !important;
     }
     a.navs {
         display: block;
