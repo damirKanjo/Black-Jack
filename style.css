@@ -92,7 +92,7 @@ body {
 
 .dropdown-item{
     padding: 15px 30px;
-    color: black;
+    color: black !important;
 }
 
 .dropdown-menu-end[data-bs-popper]{
@@ -160,9 +160,6 @@ li.nav-item:hover{
     .nav-item {
         border: 0px !important;
         width: 100% !important;
-    }
-    button.dropdown-item{
-        color: white;
     }
     .text-secondary{
         color: white !important;
