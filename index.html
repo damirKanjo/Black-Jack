@@ -67,7 +67,7 @@
         }
         
     function display_ct() {
-            var block = 1;
+            var block = 0;
             var x = new Date();
             var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
             var x1 = x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear();
@@ -175,16 +175,15 @@
         POPUP ZA NERADNE DANE!!!
 ---------------------------------------------------
 */
-        //***** U funkciji display_ct() promeniti varjablu block na 1 *****//
+        //***** U funkciji display_ct() promeniti varjablu block na 1 za ZATVORENO*****//
 
         window.onload = popup();
         var stop;
-        let block = 1;
 
         function popup() {
           document.querySelector("#myPopup").style.display = "block";
           document.querySelector(".back").style.display = "block";
-          stop = 1;
+          stop = 0;                                                            // promeniti na 1 kada je ZATVORENO
         }
         document.querySelector("#close").addEventListener("click", function() {
                 document.querySelector("#myPopup").style.display = "none";
