@@ -178,12 +178,18 @@
         //***** U funkciji display_ct() promeniti varjablu block na 1 za ZATVORENO*****//
 
         window.onload = popup();
-        var stop;
+        var stop = 0;                             // promeniti na 1 kada je ZATVORENO
 
         function popup() {
-          document.querySelector("#myPopup").style.display = "block";
-          document.querySelector(".back").style.display = "block";
-          stop = 0;                                                            // promeniti na 1 kada je ZATVORENO
+            if(stop == 1){
+                document.body.style.overflow = "hidden";
+                document.querySelector("#myPopup").style.display = "block";
+                document.querySelector(".back").style.display = "block";
+            }
+            else{
+                document.querySelector("#myPopup").style.display = "none";
+                document.querySelector(".back").style.display = "none";
+            }
         }
         document.querySelector("#close").addEventListener("click", function() {
                 document.querySelector("#myPopup").style.display = "none";
@@ -194,9 +200,6 @@
                 document.querySelector('.back').style.display = 'none';
             }
         )
-        if(stop == 1){
-            document.body.style.overflow = "hidden";
-        }
     </script>
 
 
